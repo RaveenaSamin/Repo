@@ -1,9 +1,9 @@
 #include <signal.h>
-#include<conio.h>
+#include<stlib.h>
 int main()
 {
   
- if (raise(SIGURG) != 0) //maser branch
+ if (raise(SIGURG) == 0)
 
     perror("Failed to raise SIGURG");
   else
